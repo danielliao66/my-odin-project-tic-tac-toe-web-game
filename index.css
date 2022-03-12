@@ -1,0 +1,12 @@
+td {
+    border: 1px solid gray;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    font-size: 75px;
+    font-family: Arial, sans-serif;
+}
+
+#board, #new-game, #form, #submit {
+    display: none;
+}

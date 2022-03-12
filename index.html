@@ -2,11 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    
+    <table id="board">
+        <tr>
+            <td id="0" onclick="displayController.onAttempt(this)"></td>
+            <td id="1" onclick="displayController.onAttempt(this)"></td>
+            <td id="2" onclick="displayController.onAttempt(this)"></td>
+        </tr>
+        <tr>
+            <td id="3" onclick="displayController.onAttempt(this)"></td>
+            <td id="4" onclick="displayController.onAttempt(this)"></td>
+            <td id="5" onclick="displayController.onAttempt(this)"></td>
+        </tr>
+        <tr>
+            <td id="6" onclick="displayController.onAttempt(this)"></td>
+            <td id="7" onclick="displayController.onAttempt(this)"></td>
+            <td id="8" onclick="displayController.onAttempt(this)"></td>
+        </tr>
+    </table>
+    <div id="start-game">
+        <button onclick="displayController.start()">Start Game</button>
+    </div>
+    <div id="new-game">
+        <button onclick="displayController.restart()">New Game</button>
+    </div>
+    <form id="form">
+        <div>
+            <label for="name1">Player 1 (O) name: </label>
+            <input type="text" id="name1">
+        </div>
+        <div>
+            <label for="name2">Player 2 (X) name: </label>
+            <input type="text" id="name2">
+        </div>
+        <span>Who first? </span>
+        <div>
+            <input type="radio" name="first" id="1first">
+            <label for="1first">Player 1</label>
+            <input type="radio" name="first" id="2first">
+            <label for="1first">Player 2</label>
+        </div>
+    </form>
+    <div id="submit">
+        <button onclick="displayController.submit()">Start</button>
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>
